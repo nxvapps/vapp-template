@@ -1,7 +1,21 @@
-# vapp
+# vapp-template
 This is the template for a basic app. The idea is that this is the core. Everything extends this.
 
 To see the spec and source of this extension see, see: https://github.com/nxvapps/vapp
+
+## Building
+```
+. .INFO
+docker build \
+  --build-arg CUDA_VERSION=${CUDA_VERSION} \
+  --build-arg UBUNTU_VERSION=${UBUNTU_VERSION} \
+  --build-arg VIRTUALGL_VERSION=${VIRTUALGL_VERSION} \
+  --build-arg APP=${APP} \
+  --build-arg APP_START=${APP_START} \
+  --build-arg APP_INSTALL=${APP_INSTALL} \
+  -t "${APP}:cuda${CUDA_VERSION}-ubuntu${UBUNTU_VERSION}" \
+  .
+```
 
 ## Components
 There are a few critical components
