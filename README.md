@@ -47,3 +47,6 @@ This is for common, or what will be, common questions.
 cd vapp
 git pull
 ```
+
+### How do I change the port?
+You can change the port with the `PORT` environment variable at runtime.
