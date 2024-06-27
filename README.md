@@ -23,6 +23,10 @@ There are a few critical components
 ### X11 Session
 This is what powers everything. We run the app directly in an X11 session with no desktop.
 
+### v4l2loopback
+This needs to be enabled and loaded on the host in order to function. Please use the v4l2loopback_install.sh
+script to set this up.
+
 ### vapp
 vapp is the underlying project this extends. Everything for the barebones of this project should exist
 there. The template is for unique aspects and facilitation of apps.
