@@ -49,4 +49,4 @@ git pull
 ```
 
 ### How do I change the port?
-You can change the port with the `PORT` environment variable at runtime.
+You can change the port with the `PORT` environment variable at runtime. The default port is 7777/TCP
